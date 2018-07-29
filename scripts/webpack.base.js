@@ -6,6 +6,8 @@ module.exports = {
     'x2-home': './x2-home/index.jsx'
   },
   externals: {
+    antd: 'antd',
+    classnames: 'classnames',
     'prop-types': 'prop-types',
     react: 'react',
     'react-dom': 'react-dom'
