@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const config = require('./webpack.base');
 
@@ -13,5 +14,6 @@ config.devServer = {
     'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
   }
 };
+config.plugins.push(new webpack.HotModuleReplacementPlugin());
 
 module.exports = config;
